@@ -1,0 +1,267 @@
+:root {
+    --lighter: #313244;
+    --bg: #1e1e2e;
+    --darker: #181825;
+    --darkest: #11111b;
+    --primary: #cba6f7;
+    --secondary: #f5c2e7;
+    --text: #cdd6f4;
+    --darktext: #313244;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #CDD6F4;
+}
+
+body {
+    background-color: #1E1E2E;
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+	  text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+    height: 60px;
+    background-color: #11111b;
+}
+
+@media only screen and (max-width: 626px) {
+  .navbar {
+    display: none;
+  }
+
+  .logo-pic {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 626px) {
+  .menu-dropdown {
+    display: none;
+  }
+
+  .smol-navbar {
+    display: none;
+  }
+}
+
+#smol-navbar {
+  display: none;
+  background-color: #11111b;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nav-text {
+	display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  text-decoration: none;
+  color: #cdd6f4;
+  font-size: 1.3rem;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.logo-pic {
+  margin-top: 2px;
+  margin: 4px;
+  height: 100%;
+}
+
+.lang {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.lang div {
+  margin: 8px;
+}
+
+.nav-text::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #cdd6f4;
+    display: block;
+    transition: width 0.5s ease;
+}
+  
+.nav-text:hover::after {
+    width: 100%;
+}
+
+.menu-dropdown {
+  margin: 1rem;
+}
+
+.pannel {
+    border-bottom: 1px solid #11111b;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+h1{
+    color: #cba6f7;
+    font-size: 3.7rem;
+    letter-spacing: -3px;
+	  padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+h2{
+  color: #cdd6f4;
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+p {
+	font-size: 1.2rem;
+	padding-top: 20px;
+    padding: 10px;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cards {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 916;
+    width: calc(100 - 20px);
+    max-width: 1000px;
+}
+
+.card {
+    background-color: #11111b33;
+    border: 2px solid #313244;
+    transition: border 500ms;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 220px;
+    position: relative;
+    width: 220px;
+}
+
+.card:hover {
+    border: 2px solid #585b70;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card::before {
+    background: radial-gradient(
+        800px circle at 50% 50%,
+        #7f849c4d,
+        transparent 40%
+    );
+    border-radius: inherit;
+    content: "";
+    opacity: 0;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+    z-index: -1;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
+
+@media(max-width: 1000px) {
+    .content {
+      align-items: flex-start;  
+      overflow: auto;
+    }
+    
+    #cards {    
+      max-width: 1000px;
+      padding: 10px 10px;
+    }
+    
+    .card {
+      flex-shrink: 1;
+      width: calc(50% - 4px);
+    }
+  }
+  
+  @media(max-width: 500px) {
+    .card {
+      height: 180px;
+    }
+    
+    .card-image {
+      height: 80px;  
+    }
+    
+    .card-image > i {
+      font-size: 3em;
+    }
+      
+    .card-info-wrapper {
+      padding: 0px 10px;
+    }
+    
+    .card-info > i { 
+      font-size: 0.8em; 
+    }
+    
+    .card-info-title > h3 {
+      font-size: 0.9em;
+    }
+  
+    .card-info-title > h4 {
+      font-size: 0.8em;
+      margin-top: 4px;
+    }
+  }
+  
+  @media(max-width: 320px) {
+    .card {
+      width: 100%;
+    }
+  }
