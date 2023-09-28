@@ -34,7 +34,10 @@ nav {
     background-color: #11111b;
 }
 
-img {width:auto; }
+img {
+  max-width:100%;
+    max-height:100%;
+}
 
 @media only screen and (max-width: 626px) {
   .navbar {
