@@ -34,6 +34,8 @@ nav {
     background-color: #11111b;
 }
 
+img {width:auto; }
+
 @media only screen and (max-width: 626px) {
   .navbar {
     display: none;
