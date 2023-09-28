@@ -93,6 +93,10 @@ ul {
   height: 100%;
 }
 
+.place-img {
+  border-radius: 1%;
+}
+
 .lang {
   margin: 0;
   padding: 0;
@@ -155,6 +159,10 @@ p {
   padding-right: 30px;
   text-align: left;
 
+}
+
+.limit-width {
+  width: 1000px;
 }
 
 @media only screen and (min-width: 726px) {
