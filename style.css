@@ -154,11 +154,26 @@ p {
   padding-left: 30px;
   padding-right: 30px;
   text-align: left;
-  border: red dashed 1px;
+
+}
+
+@media only screen and (min-width: 726px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
 }
 
 .pfp-pic {
-  display: inline-block;
   border-radius: 4%;
   padding: 5px;
 }
