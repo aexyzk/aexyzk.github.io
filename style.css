@@ -97,6 +97,11 @@ ul {
   border-radius: 1%;
 }
 
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .lang {
   margin: 0;
   padding: 0;
@@ -302,4 +307,41 @@ p {
     .card {
       width: 100%;
     }
+  }
+
+  /* projects */
+
+  .project {
+    background-color: var(--bg);
+    transition: background-color, 100ms;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    width: 100%;
+  }
+
+  .project:hover {
+    cursor: pointer;
+    background-color: var(--darker);
+  }
+
+  .project-img {
+    border-radius: 10px;
+    display: block;
+    max-width:230px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+  }
+
+  .project-header {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+  }
+
+  .textboi {
+    width: 90%;
+    border: red dashed 1px;
   }
