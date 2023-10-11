@@ -15,6 +15,7 @@
     box-sizing: border-box;
     font-size: 16px;
     color: #CDD6F4;
+    border: red 1px dashed;
 }
 
 body {
@@ -141,6 +142,7 @@ ul {
 }
 
 h1{
+    background-image: url("https://aethefurry.github.io/images/trip_1/3.jpg");
     color: #cba6f7;
     font-size: 3.7rem;
     letter-spacing: -3px;
