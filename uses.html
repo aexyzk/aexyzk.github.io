@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport", content="width=device-width, inital-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function toggle() {
+              var x = document.getElementById("smol-navbar");
+              if (x.style.display === "flex") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "flex";
+              }
+            }
+        </script>
+        <title>Uses</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+    </head>
+    <body>
+        <header>
+
+          <nav>
+                <ul class="menu">
+                    <li><a><img
+                        class="logo-pic"
+                        src="images/logo.png"
+                        width="56"
+                        height="56"
+                        alt="image">
+                    </a></li>
+
+                    <li class="menu-dropdown" onclick="toggle()";" style="cursor: pointer;">
+                        <svg width="36" height="36" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                    </li>
+                </ul>
+
+                <div class="navbar">
+                    <a class="nav-text" href="index.html">About</a>
+                    <a class="nav-text" href="uses.html">Uses</a>
+                    <a class="nav-text" href="projects.html">Projects</a>
+                    <a class="nav-text" href="places.html">Places</a>
+                    <a class="nav-text" href="contact.html">Contact</a>
+                </div>
+            </nav>
+
+            <div id="smol-navbar" class="smol-navbar">
+                <a class="nav-text" href="index.html">About</a>
+                <a class="nav-text" href="uses.html">Uses</a>
+                <a class="nav-text" href="projects.html">Projects</a>
+                <a class="nav-text" href="places.html">Places</a>
+                <a class="nav-text" href="contact.html">Contact</a>
+            </div>
+
+        </header>
+		
+	
+        <content>
+		    <h1>Uses</h1>
+            <div class="row">
+                <img class="pfp-pic" src="images/desktop.jpg" width="256" height="256">
+            </div>
+            <div>
+                <h2>Title</h2>
+                <p>List</p>
+                <p>List</p>
+                <p>List</p>
+                <p>List</p>
+            </div>
+            <div>
+                <h2>Title</h2>
+                <p>List</p>
+                <p>List</p>
+                <p>List</p>
+                <p>List</p>
+            </div>
+        </content>
+    </body>
+</html>

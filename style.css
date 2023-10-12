@@ -28,7 +28,6 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
     padding: 0px 0px;
     height: 60px;
     background-color: #11111b;
