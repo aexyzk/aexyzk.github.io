@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
 	  text-align: center;
+    overflow-x: hidden;
 }
 
 nav {
@@ -36,6 +37,14 @@ nav {
 img {
     max-width:100%;
     max-height:100%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+}
+
+.place-img {
+  width: 100%;
+  height: auto;
+  margin: 3px;
 }
 
 @media only screen and (max-width: 626px) {
@@ -92,26 +101,9 @@ ul {
   height: 100%;
 }
 
-.place-img {
-  border-radius: 1%;
-}
-
 .card-content {
   display: flex;
   flex-direction: column;
-}
-
-.lang {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
-  white-space: nowrap;
-}
-
-.lang div {
-  margin: 8px;
 }
 
 .nav-text::after {
@@ -140,7 +132,6 @@ ul {
 }
 
 h1{
-    background-image: url("https://aethefurry.github.io/images/trip_1/3.jpg");
     color: #cba6f7;
     font-size: 3.7rem;
     letter-spacing: -3px;
@@ -163,11 +154,10 @@ p {
   padding-left: 30px;
   padding-right: 30px;
   text-align: left;
-
 }
 
 .limit-width {
-  width: 1000px;
+  width: 90%;
 }
 
 @media only screen and (min-width: 726px) {
@@ -176,6 +166,17 @@ p {
     justify-content: space-between;
     padding: 10px 10px;
   }
+}
+
+.column {
+  width: 100%;
+  margin: 4px;
+}
+
+hr {
+  color: #1e1e2e;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .pfp-pic {
@@ -188,6 +189,7 @@ p {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 #cards {
@@ -210,6 +212,7 @@ p {
     height: 220px;
     position: relative;
     width: 220px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
 }
 
 .card:hover {
@@ -243,6 +246,23 @@ p {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+table {
+  text-align: left;
+  max-height: 100%;
+  background-color: #181825;
+  border: #CDD6F4 1px solid;
+  display: flex;
+  align-items: start;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+  width: 100%;
+}
+
+th {
+  padding-left: 8px;
+  padding-top: 5px;
 }
 
 /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
