@@ -1,8 +1,8 @@
 :root {
     --lighter: #313244;
-    --bg: #000000;
-    --darker: #000000;
-    --darkest: #000000;
+    --bg: #1e1e2e;
+    --darker: #181825;
+    --darkest: #11111b;
     --primary: #cba6f7;
     --secondary: #f5c2e7;
     --text: #cdd6f4;
@@ -14,24 +14,17 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
-    color: #ffffff;
+    color: #CDD6F4;
 }
 
 body {
-    background-color: #000000;
+    background-color: #1E1E2E;
     height: 100vh;
     font-family: Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
 	  text-align: center;
     overflow-x: hidden;
-}
-
-nav {
-    display: flex;
-    padding: 0px 0px;
-    height: 60px;
-    background-color: #11111b;
 }
 
 img {
