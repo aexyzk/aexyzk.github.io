@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:700|Ubuntu:400');
 
 :root {
-  --text: #e2e5fd;
-  --disabled: #525252;
-  --lighter-bg: #313131;
-  --background: #1e1e1e;
-  --darker-bg: #1a1a1a;
-  --header: #111111;
-  --primary: #ff49e1;
-  --secondary: #2e2e2e;
-  --accent: #d236d2;
+  --dividers: #0e1821;
+  --disabled: #1f354d;
+  --text: #e2eaf3;
+  --lighter-bg: #162534;
+  --background: #060a0e;
+  --darker-bg: #010203;
+  --primary: #7d7bc6;
+  --secondary: #22142e;
+  --accent: #8a57b7;
 }
 
 body {
@@ -60,13 +60,13 @@ nav {
     display: flex;
     padding: 0px 0px;
     height: 60px;
-    background-color: var(--header);
+    background-color: var(--darker-bg);
 }
 
 img {
     max-width:100%;
     max-height:100%;
-    border-radius: 4px;
+    border-radius: 3px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
 }
 
@@ -205,10 +205,10 @@ p {
 }
 
 hr {
-  margin-top: 5px;
+  margin-top: 10px;
   height: 2px;
   border: none; 
-  background: var(--darker-bg);
+  background: var(--dividers);
   width: 100%;
   margin-bottom: 5px;
 }
@@ -239,7 +239,7 @@ hr {
 
 .card {
     background-color:  rgba(var(--background), 0.2);
-    border: 2px solid var(--lighter-bg);
+    border: 2px solid var(--dividers);
     transition: border 500ms;
     border-radius: 10px;
     cursor: pointer;
@@ -333,6 +333,7 @@ th {
 
 .darker-font {
   color: var(--disabled);
+  margin-bottom: 40px;
 }
 
 /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
@@ -408,7 +409,7 @@ th {
   }
 
   .project-img {
-    border-radius: 10px;
+    border-radius: 3px;
     display: block;
     max-width:230px;
     max-height:150px;
@@ -443,4 +444,9 @@ th {
     padding-top: 5px;
     padding-bottom: 2px;
   }
+}
+
+footer {
+  margin-top: 50px;
+  background-color: var(--darker-bg);
 }
