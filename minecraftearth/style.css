@@ -135,7 +135,7 @@ nav {
 
 #smol-navbar {
   display: none;
-  background-color: var(--header);
+  background-color: var(--darker-bg);
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
