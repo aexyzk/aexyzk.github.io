@@ -1,0 +1,1 @@
+i wrote this on samsung dex vscode and commiteded it though git on ubuntu though termux
