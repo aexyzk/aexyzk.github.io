@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport", content="width=device-width, inital-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function toggle() {
+              var x = document.getElementById("smol-navbar");
+              if (x.style.display === "flex") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "flex";
+              }
+            }
+        </script>
+        <title>Heller!</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class="menu-dropdown" onclick="toggle()";" style="cursor: pointer;">
+                        <svg width="36" height="36" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                    </li>
+                </ul>
+
+                <div class="navbar">
+                    <a class="nav-text" href="../index.html">Home</a>
+                </div>
+            </nav>
+        </header>
+		
+	
+        <content class="center">
+            <div class="limit-width" style="max-width: 1200px">
+                <h1>Silly OSC!</h1>
+
+                <div class="row">
+                    <div class="column">
+                        <h2>An OSC/RPC server!</h2>
+                        <p>SillyOSC displays system status (e.g. CPU, GPU, and RAM usage), currently playing music, and local time on Discord RPC, and VRChat OSC chatbox!</p>
+                        <p>Plus its completely open-source, you can even complie it from source if you want!</p>
+                    </div>
+                    <div class="column" style="max-width: 256px;">
+                        <img src="https://github.com/aexyzk/sillyosc/raw/main/example/logo.png?raw=true" alt="">
+                    </div>
+                </div>
+                
+                <hr>
+
+                <h4>Here's how it looks in VRChat and Discord!</h4>
+                <div class="row">
+                    <div class="column">
+                        <img src="https://github.com/aexyzk/sillyosc/raw/main/example/vrc.png?raw=true" alt="">
+                    </div>
+                    <div class="column">
+                        <img src="https://github.com/aexyzk/sillyosc/raw/main/example/discord.png?raw=true" alt="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="column" style="margin: 32px;">
+                        <h4>You can download or view source code here!</h4>
+                        <div class="button-group" style="margin-top: 72px;">
+                            <a href="https://github.com/aexyzk/sillyosc" class="button">Code</a>
+                            <a href="downloads" class="button">Downloads</a>
+                        </div>
+                    </div>
+                    <div class="column" style="margin: 32px;">
+                        <img src="gui.png" alt="" style="border-radius: 6px;">
+                    </div>
+                </div>
+                
+
+            </div>
+        </content>
+        
+        <footer>
+            <div class="row">
+                    <p>Non Copyrighted <script>document.write( new Date().getFullYear() );</script> aexyzk</p>
+            </div>
+        </footer>
+		
+    </body>
+</html>
