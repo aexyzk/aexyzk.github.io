@@ -7,19 +7,8 @@
         <title>aexyzk's bio</title>
     </head>
     <body>
-        <div class="parallax" data-speed="0.05"></div>
-        <script>
-            document.addEventListener("scroll", function() {
-                let scrollPosition = window.scrollY;
-                let parallaxElements = document.querySelectorAll(".parallax");
-                
-                parallaxElements.forEach(function(element) {
-                    let speed = parseFloat(element.getAttribute("data-speed"));
-                    element.style.transform = `translateY(${scrollPosition * speed}px)`;
-                });
-            });
-            </script>
-        
+        <div class="parallax"></div>
+
         <div class="column">
             <div class="biobox">
                 <img src="images/stupidlogo.png" alt="logo image" class="logo-pic">
@@ -28,7 +17,7 @@
                     <h5 style="margin-top: 10px;">haiii! #>w<#</h5>
                     <p>i'm a software engineer and game developer, i mostly use python, but also dable in dotnet. some hobbies i have are solving rubik's cubes, drawing, installing linux on anything and everything, building computers, and playing games. my personal best time on a 3x3 rubik's cube is 22.36 seconds, and you can find some of the games and projects i've made below. lastly, feel free to contact me!</p>
                     <h5 style="margin-top: 10px;">info</h5>
-                    <p>i live in middle united states, tennessee, within the cst timezone, i speak english natively and i'm currently learning german, i'm <script>
+                    <p>i live in united states, middle tennessee, within the cst timezone, i speak english natively and i'm currently learning german, i'm <script>
                         var birthDate = new Date('2008-12'); // Your birth date
                         var currentDate = new Date();
                         var age = currentDate.getFullYear() - birthDate.getFullYear();
