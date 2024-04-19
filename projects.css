@@ -1,0 +1,30 @@
+
+.projects {
+    margin-bottom: 32px;
+    margin-top: 10px;
+}
+
+.project {
+    display: flex;
+    display: column;
+}
+
+.project:hover {
+    background-color: rgba(17, 17, 27, 0.50);
+    cursor: pointer;
+}
+
+.project-img {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.project-header {
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    text-align: left;
+    margin-left: 28px;
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700|Ubuntu:400');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+  --dividers: rgb(30, 30, 46);
+  --text: #e2eaf3;
+  --background: #060a0e;
+  --primary: #7d7bc6;
+  --secondary: #22142e;
+  --accent: #8a57b7;
+}
+
+body {
+  font-family: 'Pixelify Sans';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Pixelify Sans';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 5.652rem; /* 90.4px */}
+
+h2 {font-size: 3.997rem; /* 64px */}
+
+h3 {font-size: 2.827rem; /* 45.28px */}
+
+h4 {font-size: 1.999rem; /* 32px */}
+
+h5 {font-size: 1.414rem; /* 22.56px */}
+
+small {font-size: 0.707rem; /* 11.36px */}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text);
+  scrollbar-width: thin;
+  scrollbar-color: rgb(30, 30, 46) #060a0e;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow-x: hidden;
+  background-color: var(--background);
+}
+
+h1{
+  margin-top: 20px;
+  color: var(--primary);
+  font-size: 3.7rem;
+  letter-spacing: -3px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+h2{
+  color: var(--text);
+  font-size: 1.5rem;
+  letter-spacing: -1px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+	padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 4px;
+}
+
+hr {
+  display: flex;
+  margin-top: 10px;
+  height: 5px;
+  border: none; 
+  background: var(--dividers);
+  width: 90%;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-pic {
+  width: 400px;
+  margin-bottom: -20px;
+}
+
+.location {
+  margin-top: 30px;
+  display: flex;
+  overflow-x: hidden;
+  margin: 10px;
+  margin-top: 60px;
+}
+
+.location p {
+  color: #9a9ea3;
+  margin-left: 15px;
+  overflow: hidden;
+
+  padding: 6px 0px 0px 6px;
+  margin: 0px 0px 0px 0px;
+}
+
+.location svg {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+}
+
+footer {
+  background-color: var(--background);
+  text-align: left;
+  overflow-x: hidden;
+}
