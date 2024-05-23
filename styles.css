@@ -11,12 +11,12 @@
 }
 
 body {
-  font-family: 'Pixelify Sans';
+  font-family: 'Ubuntu';
   font-weight: 400;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Pixelify Sans';
+  font-family: 'Ubuntu';
   font-weight: 700;
 }
 
@@ -140,4 +140,5 @@ footer {
   background-color: var(--background);
   text-align: left;
   overflow-x: hidden;
+  padding: 10px;
 }
