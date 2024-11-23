@@ -1,0 +1,37 @@
+#projects-window {
+    padding: 0px !important;
+}
+
+.projects {
+    margin-bottom: 32px;
+    margin-top: 10px;
+}
+
+.project {
+    display: flex;
+    display: column;
+}
+
+.project:hover {
+    background-color: rgba(24, 24, 37, 0.5);2
+    cursor: pointer;
+}
+
+.project-img {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.textboi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-header {
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+}
