@@ -87,7 +87,7 @@ main {
   width: 50%;
 }
 
-img {
+.scale_img {
   width: 100%;
   height: auto;
 }
@@ -186,29 +186,6 @@ th {
 
 .tab {
   width: fit-content;
-}
-
-#interests {
-  padding: unset;
-  margin: unset;
-}
-
-#interests table tr {
-  display: flex;
-}
-
-#interests table tr th {
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-  width: 100%;
-  border: rgb(93, 37, 128) 1px solid;
-}
-
-#interests table tr .tab {
-  width: 72px;
-  background-color: rgb(220, 103, 224);
-  color: rgb(0, 0, 0);
 }
 
 .snowflake {
